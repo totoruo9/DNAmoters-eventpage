@@ -1,0 +1,187 @@
+/* Common CSS */
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background:url("../images/background.png") no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+}
+
+main {
+    max-width: 780px;
+    width: 100vw;
+    overflow: hidden;
+    padding: 3rem 1.5rem;
+    /* background:url("../images/background.png") no-repeat center;
+    background-size: cover; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+img {
+    width: 100%;
+}
+
+.wrap {
+    position: relative;
+    overflow: hidden;
+}
+
+/* Visual CSS */
+.visual {
+    max-width: 654px;
+    max-height: 1045px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background:url("../images/visual.png") no-repeat center top;
+    background-size:contain;
+    padding: 4.5rem;
+}
+
+
+
+#logo {
+    max-width: 12rem;
+    padding-bottom: 4rem;
+    /* opacity: 0;
+    animation: on 1s ease-in-out forwards; */
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info .title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3rem;
+}
+
+.info .title .subtitle {
+    max-width: 386px;
+    width: 100%;
+    padding-bottom: 2rem;
+    position: relative;
+    
+}
+
+.info .title .subtitle img {
+    opacity: 0;
+    animation: on .7s 1s ease-in forwards;    
+}
+
+.info .title .maintitle {
+    opacity: 0;
+    max-width: 345rem;
+    animation: on 1s ease-in forwards;
+}
+
+.info .date {
+    max-width: 23.875rem;
+    padding-bottom: 5rem;
+    opacity: 0;
+    animation: on .7s .3s ease-in forwards;
+}
+
+.btn__wrap {
+    display: flex;
+    align-items: center;
+    z-index: 100;
+}
+
+.btn__wrap a {
+    max-width: 382px;
+    display: inline-block;
+    padding:2px 0;
+}
+
+.btn__wrap .event__map-btn {
+    opacity: 0;
+    animation: on 1s .5s ease-out forwards;
+}
+
+.btn__wrap .event__faq-btn {
+    opacity: 0;
+    animation: on 1s .7s ease-out forwards;
+}
+
+/* Event CSS */
+.event {
+    background:url("../images/bottom-background.png") no-repeat center;
+    background-size: 100% 200%;
+    max-width: 780px;
+    max-height: 643px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 3.75rem 5rem 3.75rem;
+}
+
+.event h2 {
+    padding: 0 1rem;
+    text-align: left;
+    margin-bottom: 1rem;
+}
+
+.event h2 img {
+    width: 60%;
+}
+
+.event .btn__wrap a {
+    max-width: 659px;
+    padding: .5rem 0;
+}
+
+.info-wrap {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.event .btn__wrap {
+    flex-direction: column;
+}
+
+a.topBtn {
+    position: absolute;
+    top:1%;
+    right: 2.5%;
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    z-index: 300;
+    background: none;
+    border: 0px;
+}
+
+a.bottomBtn {
+    position: absolute;
+    bottom:2.5%;
+    z-index: 300;
+    width: 60%;
+    padding: 0;
+    display: flex;
+    background: none;
+    border: 0px;
+}

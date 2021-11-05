@@ -1,0 +1,40 @@
+html {
+    font-size: 8px;
+}
+
+body {
+    padding:0;
+}
+
+
+main {
+    padding: 3rem 1.5rem;
+}
+
+/* Visual */
+#logo {
+    max-width: 12rem;
+}
+
+.info .title .subtitle {
+    max-width: 28rem;
+}
+
+.info .date {
+    max-width: 22rem;
+}
+
+
+/* Event */
+.event {
+    padding: 0 2.5rem 3rem 2.5rem;
+}
+
+.btn__wrap a {
+    max-width: 34rem;
+    display: inline-block;
+}
+
+.event h2 {
+    
+}
