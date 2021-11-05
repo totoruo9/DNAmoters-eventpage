@@ -8,7 +8,7 @@ html {
 }
 
 body {
-    background:url("../images/background.png") no-repeat center;
+    background:url("../images/main/background.png") no-repeat center;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -48,18 +48,16 @@ img {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background:url("../images/visual.png") no-repeat center top;
+    background:url("../images/main/visual.png") no-repeat center top;
     background-size:contain;
-    padding: 4.5rem;
+    padding: 3rem 4.5rem;
 }
 
 
 
 #logo {
     max-width: 12rem;
-    padding-bottom: 4rem;
-    /* opacity: 0;
-    animation: on 1s ease-in-out forwards; */
+    padding-bottom: 3rem;
 }
 
 .info {
@@ -125,8 +123,6 @@ img {
 
 /* Event CSS */
 .event {
-    background:url("../images/bottom-background.png") no-repeat center;
-    background-size: 100% 200%;
     max-width: 780px;
     max-height: 643px;
     width: 100%;
@@ -177,11 +173,94 @@ a.topBtn {
 
 a.bottomBtn {
     position: absolute;
-    bottom:2.5%;
+    bottom:1rem;
     z-index: 300;
     width: 60%;
     padding: 0;
     display: flex;
     background: none;
     border: 0px;
+}
+
+
+
+
+
+/* faq */
+body.faq {
+    background:url("../images/QnA/background.png") no-repeat center;
+}
+
+.faq .info-wrap .faq-img {
+    margin: 6rem 0 10rem 0;
+}
+
+
+
+
+
+/* guidemap */
+body.guidemap {
+    background:url("../images/guidemap/background.png") no-repeat center;
+    background-size: cover;
+}
+
+.guidemap .item-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.guidemap .item-wrap h1 {
+    width: 30%;
+    padding: 2rem 0;
+}
+
+.guidemap .item-wrap h2 {
+    width: 80%;
+    padding-bottom: 1rem;
+}
+
+.guidemap .map-img {
+    padding: 2rem 0 1rem;
+}
+
+.guidemap .info-wrap {
+    margin: 6rem 1rem;
+    padding: 0 2rem 5rem;
+    background: url("../images/guidemap/infobox.png") no-repeat center top;
+    background-size: cover;
+}
+
+.guidemap .info-wrap .product {
+    padding: 1rem 1rem 0 0;
+}
+
+.guidemap .info-wrap .product .product-info {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.guidemap .info-wrap .product .product-info .product-img {
+    width: 40%;
+    height: 100%;
+    padding: 0 1rem;
+}
+
+.guidemap .info-wrap .product .product-info .product-explanation-wrap {
+    width: 60%;
+    padding-left: 1rem;
+}
+
+.guidemap .info-wrap .product .product-info .product-explanation-wrap .product-btn {
+    width: 60%;
+    margin-top: 1rem;
+}
+
+.guidemap a.bottomBtn {
+    left:50%;
+    bottom:0rem;
+    transform: translateX(-50%);
 }
